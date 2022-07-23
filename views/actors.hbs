@@ -1,0 +1,22 @@
+{{#extends 'base'}}
+
+{{#block 'content'}}
+<table class="table">
+    <thead>
+        <tr>actor ID</tr>
+        <tr>First Name</tr>
+        <tr>Last Name</tr>
+    </thead>
+    {{#each actors}}
+    <tr>
+        <td>{{this.actor_id}}</td>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+
+{{/block}}
+
+{{/extends}}
